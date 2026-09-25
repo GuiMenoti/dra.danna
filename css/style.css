@@ -291,6 +291,8 @@ h1,h2,h3{font-family:var(--font-title);font-weight:600;}
   display:grid;grid-template-columns:repeat(2,1fr);gap:1.8rem;
 }
 .resultado-item{position:relative;}
+.resultado-item:last-child:nth-child(odd){grid-column:1/-1;}
+.resultado-item:last-child:nth-child(odd) img{aspect-ratio:16/9;}
 .resultado-item img{
   width:100%;aspect-ratio:4/3;object-fit:cover;
   border-radius:var(--radius);border:1px solid var(--gold);display:block;
