@@ -29,6 +29,8 @@
         <li><a href="#inicio" class="active">Início</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#localizacao">Localização</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -49,6 +51,8 @@
       <li><a href="#inicio">Início</a></li>
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#resultados">Resultados</a></li>
+      <li><a href="#localizacao">Localização</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
@@ -66,6 +70,25 @@
         <span>Agendar consulta</span>
         <i class="fa-solid fa-arrow-right"></i>
       </a>
+    </div>
+  </section>
+
+  <!-- ===== Vídeo ===== -->
+  <section class="video-section">
+    <div class="container">
+      <div class="video-wrap" data-aos="fade-up">
+        <div class="video-frame"></div>
+        <video
+          class="video-player"
+          id="heroVideo"
+          src="assets/IMG_1367_web.mp4"
+          poster="assets/video-poster.jpg"
+          autoplay muted loop playsinline>
+        </video>
+        <button class="video-sound" id="videoSoundToggle" aria-label="Ativar som do vídeo">
+          <i class="fa-solid fa-volume-xmark"></i>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -240,12 +263,94 @@
   <!-- ===== Sobre ===== -->
   <section class="sobre" id="sobre">
     <div class="container sobre-inner">
-      <span class="kicker" data-aos="fade-up">Sobre a Dra Danna Daff</span>
-      <h2 data-aos="fade-up" data-aos-delay="100">Formação e trajetória a definir</h2>
-      <p data-aos="fade-up" data-aos-delay="200">Texto institucional a definir, com formação, especialidade e diferencial no atendimento</p>
-      <a href="#contato" class="btn btn-outline" data-aos="fade-up" data-aos-delay="300">
-        <span>Conheça o trabalho</span>
-      </a>
+      <div class="sobre-media" data-aos="fade-up">
+        <div class="sobre-frame"></div>
+        <img src="assets/Danna3.PNG" alt="Dra Danna Daffiner">
+      </div>
+
+      <div class="sobre-content">
+        <span class="kicker" data-aos="fade-up">Sobre a Dra Danna Daffiner</span>
+        <h2 data-aos="fade-up" data-aos-delay="100">Uma trajetória dedicada à beleza natural</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Formada em harmonização facial e corporal, a Dra Danna Daffiner uniu técnica apurada e olhar artístico para transformar a forma como seus pacientes se enxergam no espelho. Cada atendimento é tratado como um projeto único, respeitando a identidade e a naturalidade de cada rosto</p>
+        <p data-aos="fade-up" data-aos-delay="300">Essa dedicação, somada à busca constante por atualização e pelas melhores técnicas do mercado, construiu uma trajetória marcada pela confiança de milhares de pacientes</p>
+
+        <div class="sobre-stats" data-aos="fade-up" data-aos-delay="400">
+          <div class="sobre-stat">
+            <strong>+2000</strong>
+            <span>Atendimentos</span>
+          </div>
+          <div class="sobre-stat-divider"></div>
+          <div class="sobre-stat">
+            <strong>+10</strong>
+            <span>Anos de experiência</span>
+          </div>
+        </div>
+
+        <a href="#contato" class="btn btn-outline" data-aos="fade-up" data-aos-delay="500">
+          <span>Conheça o trabalho</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Antes e Depois ===== -->
+  <section class="resultados" id="resultados">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="kicker">Resultados reais</span>
+        <h2>Antes e depois</h2>
+        <p class="section-sub">Transformações de pacientes atendidos pela Dra Danna Daffiner</p>
+      </div>
+
+      <div class="resultados-grid">
+        <div class="resultado-item" data-aos="fade-up" data-aos-delay="0">
+          <img src="assets/antd_harmonização facial.jpg" alt="Antes e depois de harmonização facial">
+          <span class="resultado-nome">Harmonização facial</span>
+        </div>
+        <div class="resultado-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/antd_preenchimento labial.jpg" alt="Antes e depois de preenchimento labial">
+          <span class="resultado-nome">Preenchimento labial</span>
+        </div>
+        <div class="resultado-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/antd_Melasma.jpg" alt="Antes e depois de tratamento de melasma">
+          <span class="resultado-nome">Melasma</span>
+        </div>
+        <div class="resultado-item" data-aos="fade-up" data-aos-delay="300">
+          <img src="assets/antd_volumização glútea.jpg" alt="Antes e depois de volumização glútea">
+          <span class="resultado-nome">Volumização glútea</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Localização ===== -->
+  <section class="localizacao" id="localizacao">
+    <div class="container localizacao-inner">
+      <div class="localizacao-content" data-aos="fade-up">
+        <span class="kicker">Onde estamos</span>
+        <h2>Localização</h2>
+        <p>Um ambiente acolhedor e sofisticado, pensado para o seu conforto</p>
+        <p class="localizacao-endereco">
+          <i class="fa-solid fa-location-dot"></i>
+          R. Adib Auada, 35 &middot; Jardim Lambreta, Cotia &middot; SP, 06710&#8209;700
+        </p>
+        <a href="https://www.google.com/maps/place/R.+Adib+Auada,+35+-+Jardim+Lambreta,+Cotia+-+SP,+06710-700/@-23.5927745,-46.8340547,17z/data=!3m1!4b1!4m6!3m5!1s0x94cfaab0b6d28b71:0x5ccc860efebb8f0e!8m2!3d-23.5927745!4d-46.8340547!16s%2Fg%2F11sn00ng99?entry=ttu"
+           target="_blank" rel="noopener" class="btn btn-primary">
+          <i class="fa-solid fa-diamond-turn-right"></i>
+          <span>Como chegar</span>
+        </a>
+      </div>
+
+      <div class="localizacao-mapa" data-aos="fade-up" data-aos-delay="150">
+        <div class="localizacao-frame"></div>
+        <div class="localizacao-mapa-inner">
+          <iframe
+            src="https://www.google.com/maps?q=R.+Adib+Auada,+35+-+Jardim+Lambreta,+Cotia+-+SP,+06710-700&output=embed"
+            width="100%" height="100%" style="border:0" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Localização da Dra Danna Daffiner no mapa">
+          </iframe>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -288,6 +393,8 @@
         <li><a href="#inicio">Início</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#localizacao">Localização</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </div>

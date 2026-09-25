@@ -16,6 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  /* ---------- Som do vídeo ---------- */
+  const heroVideo = document.getElementById('heroVideo');
+  const soundToggle = document.getElementById('videoSoundToggle');
+  if (heroVideo && soundToggle) {
+    soundToggle.addEventListener('click', () => {
+      heroVideo.muted = !heroVideo.muted;
+      soundToggle.innerHTML = heroVideo.muted
+        ? '<i class="fa-solid fa-volume-xmark"></i>'
+        : '<i class="fa-solid fa-volume-high"></i>';
+    });
+  }
+
   /* ---------- Sticky header ---------- */
   const header = document.getElementById('siteHeader');
   const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 30);
